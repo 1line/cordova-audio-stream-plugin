@@ -29,16 +29,25 @@ Run
     cordova plugin add https://github.com/keosuofficial/cordova-audio-stream-plugin.git
     
 #Use it
-    my_stream = new Stream("http://your_live_radio_streeam", onSuccess, onError);
-    // Play audio
-    my_media.play();
-    function onSuccess() {
-        console.log("playAudio():Audio Success");
-    }
-    function onError(error) {
-        alert('code: '    + error.code    + '\n' +
-        'message: ' + error.message + '\n');
-    }
+
+```javascript
+my_stream = new Stream("http://your_live_radio_streeam", onSuccess, onError);
+
+// Play audio
+my_media.play();
+
+function onSuccess() {
+    console.log("playAudio():Audio Success");
+}
+
+function onError(error) {
+    alert('code: '    + error.code    + '\n' +
+    'message: ' + error.message + '\n');
+}
+```
 
 You can also stop the music with
-    my_media.stop();
+
+```javascript
+my_media.stop();
+```
